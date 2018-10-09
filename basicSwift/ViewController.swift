@@ -8,10 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UITableViewController {
+    //@IBOutlet  *menu1;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let ui = UIView(frame: CGRect(x: 100, y: 10, width: 50, height: 150))
+        ui.backgroundColor = UIColor.blue;
+        self.view.addSubview(ui);
         // Do any additional setup after loading the view, typically from a nib.
     }
 

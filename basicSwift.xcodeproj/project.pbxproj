@@ -13,6 +13,8 @@
 		CF6AD17920463DB80059EABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6AD17820463DB80059EABA /* Assets.xcassets */; };
 		CF6AD17C20463DB80059EABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6AD17A20463DB80059EABA /* LaunchScreen.storyboard */; };
 		CF6AD18720463DB80059EABA /* basicSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6AD18620463DB80059EABA /* basicSwiftTests.swift */; };
+		CF6AD1B2204662210059EABA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6AD1B1204662210059EABA /* MainViewController.swift */; };
+		CFB2A205216C7868006D4561 /* vcDemo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2A204216C7868006D4561 /* vcDemo1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		CF6AD18220463DB80059EABA /* basicSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = basicSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6AD18620463DB80059EABA /* basicSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicSwiftTests.swift; sourceTree = "<group>"; };
 		CF6AD18820463DB80059EABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6AD1B1204662210059EABA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CFB2A204216C7868006D4561 /* vcDemo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcDemo1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +83,12 @@
 			children = (
 				CF6AD17120463DB80059EABA /* AppDelegate.swift */,
 				CF6AD17320463DB80059EABA /* ViewController.swift */,
+				CFB2A204216C7868006D4561 /* vcDemo1.swift */,
 				CF6AD17520463DB80059EABA /* Main.storyboard */,
 				CF6AD17820463DB80059EABA /* Assets.xcassets */,
 				CF6AD17A20463DB80059EABA /* LaunchScreen.storyboard */,
 				CF6AD17D20463DB80059EABA /* Info.plist */,
+				CF6AD1B1204662210059EABA /* MainViewController.swift */,
 			);
 			path = basicSwift;
 			sourceTree = "<group>";
@@ -141,15 +147,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = jorgenizama.com;
 				TargetAttributes = {
 					CF6AD16D20463DB80059EABA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					CF6AD18120463DB80059EABA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CF6AD16D20463DB80059EABA;
 					};
@@ -199,8 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6AD1B2204662210059EABA /* MainViewController.swift in Sources */,
 				CF6AD17420463DB80059EABA /* ViewController.swift in Sources */,
 				CF6AD17220463DB80059EABA /* AppDelegate.swift in Sources */,
+				CFB2A205216C7868006D4561 /* vcDemo1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +266,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -263,6 +274,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -313,6 +325,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -320,6 +333,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -359,7 +373,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jorgenizama.com.basicSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -374,7 +388,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jorgenizama.com.basicSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -390,7 +404,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jorgenizama.com.basicSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/basicSwift.app/basicSwift";
 			};
@@ -407,7 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jorgenizama.com.basicSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/basicSwift.app/basicSwift";
 			};
