@@ -20,6 +20,10 @@ class vcDemo1: UIViewController {
         NSLog("hola mundo");
     }
     
+    @IBAction func btnShowAlert(_ sender: Any) {
+        let alert = UIAlertController(title: "Titu", message: "mi mensaje", preferredStyle : .alert);
+        self.present(alert, animated: true);
+    }
     /*
     // MARK: - Navigation
 
